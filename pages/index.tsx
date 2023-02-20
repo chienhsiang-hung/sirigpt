@@ -100,7 +100,7 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Create SQL queries with ease
+          Ask your question here
         </h1>
         <p className="text-slate-500 mt-5">18,167 queries generated so far.</p>
         <div className="max-w-xl w-full">
