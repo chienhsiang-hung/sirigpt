@@ -24,7 +24,7 @@ const Home: NextPage = () => {
     e.preventDefault();
     setGeneratedBios("");
     setLoading(true);
-    const response = await fetch("https://givemesql.vercel.app/api/generate", {
+    const response = await fetch("https://sirigpt.vercel.app/api/generate", {
       method: "POST",
       body: JSON.stringify({
         prompt,
