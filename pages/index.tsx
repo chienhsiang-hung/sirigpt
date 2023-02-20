@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
   console.log("Streamed response: ", generatedBios);
 
-  const prompt = `Create a SQL request to ${bio}`;
+  const prompt = bio;
 
   const generateBio = async (e: any) => {
     e.preventDefault();
