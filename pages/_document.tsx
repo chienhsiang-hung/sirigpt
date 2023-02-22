@@ -6,22 +6,23 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>SiriGPT</title>
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Generate your SQL Query in seconds."
+            content="Upgrade your Siri to SiriGPT."
           />
-          <meta property="og:site_name" content="GiveMeSQL" />
+          <meta property="og:site_name" content="SiriGPT" />
           <meta
             property="og:description"
-            content="Generate your SQL Query in seconds."
+            content="Upgrade your Siri to SiriGPT."
           />
-          <meta property="og:title" content="SQL Query Generator" />
+          <meta property="og:title" content="SiriGPT" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="SQL Query Generator" />
+          <meta name="twitter:title" content="SiriGPT" />
           <meta
             name="twitter:description"
-            content="Generate your SQL Query in seconds."
+            content="Upgrade your Siri to SiriGPT."
           />
           <meta
             property="og:image"
@@ -32,15 +33,12 @@ class MyDocument extends Document {
             content="https://github.com/chienhsiang-hung/chienhsiang-hung.github.io/raw/main/android-chrome-512x512.png"
           />
 
-
-          <title>SQL Query Generator</title>
-          <link rel="icon" href="/favicon.ico" />
           {/* <!-- SEO --> */}
-          <meta property="og:title" content="SQL Query Generator"/>
-          <meta property="og:url" content="https://chienhsiang-hung.github.io/givemesql/"/>
+          <meta property="og:title" content="SiriGPT"/>
+          <meta property="og:url" content="https://chienhsiang-hung.github.io/sirigpt/"/>
           <meta property="og:image" content="https://github.com/chienhsiang-hung/chienhsiang-hung.github.io/raw/main/android-chrome-512x512.png"/>
-          <meta name="keywords" content="SQL Query Generator"/>
-          <meta property="og:description" name="description" content="SQL Query Generator"/>
+          <meta name="keywords" content="SiriGPT"/>
+          <meta property="og:description" name="description" content="SiriGPT"/>
           <meta name="author" content="Hung, Chien-Hsiang"/>
           <meta name="copyright" content=""/>
           <meta http-equiv="expires" content="0"/>
