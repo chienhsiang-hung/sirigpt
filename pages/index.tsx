@@ -68,13 +68,13 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Ask your question here
+          Hey Siri! Life is easy.
         </h1>
         <p className="text-slate-500 mt-5">18,167 queries generated so far.</p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <p className="text-left font-medium">
-              Create a SQL request to
+              Ask your question here
             </p>
           </div>
           <textarea
