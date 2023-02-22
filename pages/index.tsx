@@ -68,7 +68,7 @@ const Home: NextPage = () => {
           <Github />
           <p>
             <span className="en">Star on GitHub</span>
-            <span className="ch">按讚原始文件</span>
+            <span className="ch">按讚原始碼</span>
           </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
