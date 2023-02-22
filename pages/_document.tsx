@@ -26,17 +26,17 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://github.com/chienhsiang-hung/chienhsiang-hung.github.io/raw/main/android-chrome-512x512.png"
+            content="https://hsiang.eu.org/android-chrome-512x512.png"
           />
           <meta
             name="twitter:image"
-            content="https://github.com/chienhsiang-hung/chienhsiang-hung.github.io/raw/main/android-chrome-512x512.png"
+            content="https://hsiang.eu.org/android-chrome-512x512.png"
           />
 
           {/* <!-- SEO --> */}
           <meta property="og:title" content="SiriGPT"/>
           <meta property="og:url" content="https://chienhsiang-hung.github.io/sirigpt/"/>
-          <meta property="og:image" content="https://github.com/chienhsiang-hung/chienhsiang-hung.github.io/raw/main/android-chrome-512x512.png"/>
+          <meta property="og:image" content="https://hsiang.eu.org/android-chrome-512x512.png"/>
           <meta name="keywords" content="SiriGPT"/>
           <meta property="og:description" name="description" content="SiriGPT"/>
           <meta name="author" content="Hung, Chien-Hsiang"/>
