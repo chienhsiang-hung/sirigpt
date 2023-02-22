@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
+  images : {
+    domains: ['chienhsiang-hung.github.io']
+  },
 
   async headers() {
     return [
