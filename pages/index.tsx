@@ -13,6 +13,7 @@ const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState("");
   const [generatedBios, setGeneratedBios] = useState<String>("");
+  const [mylang, setMyLang] = useState("en");
 
   console.log("Streamed response: ", generatedBios);
 
@@ -56,7 +57,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
-      <Header />
+      <Header mylang={mylang} setMyLang={setMyLang}/>
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
