@@ -115,9 +115,9 @@ const Home: NextPage = () => {
               {generatedBios && (
                 <>
                   <div>
-                    <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
+                    {/* <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
                       Your generated SQL
-                    </h2>
+                    </h2> */}
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
                     {/* <div
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
                     <div>
                       <CopyBlock
                         text={generatedBios.toString()}
-                        language='sql'
+                        // language='sql'
                         wrapLines
                         theme={dracula}
                       />
