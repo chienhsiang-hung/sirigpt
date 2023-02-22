@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState("");
   const [generatedBios, setGeneratedBios] = useState<String>("");
-  const [mylang, setMyLang] = useState("en");
+  const [mylang, setMyLang] = useState('en');
 
   console.log("Streamed response: ", generatedBios);
 
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
-      <Header mylang={mylang} setMyLang={setMyLang}/>
+      <Header mylang={mylang} setMyLang={setMyLang} />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
@@ -66,16 +66,21 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           <Github />
-          <p>Star on GitHub</p>
+          <p>
+            <span className="en">Star on GitHub</span>
+            <span className="ch">按讚原始文件</span>
+          </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Hey Siri! Life is easy.
+          <span className="en">Hey Siri! Life is easy.</span>
+          <span className="ch">嘿 Siri! 愜意生活</span>
         </h1>
-        <p className="text-slate-500 mt-5">18,167 queries generated so far.</p>
+        {/* <p className="text-slate-500 mt-5">18,167 queries generated so far.</p> */}
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <p className="text-left font-medium">
-              Ask your questions here
+              <span className="en">Ask your questions here</span>
+              <span className="ch">輸入你想問的問題</span>
             </p>
           </div>
           <textarea
@@ -84,7 +89,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "find all users who live in California and have over 1000 credits"
+              mylang == 'en'? "What is the best Wi-Fi name you have seen in your entire life?" : "你最喜歡的書是什麼？"
             }
           />
           {!loading && (
@@ -92,7 +97,9 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Life is easy &rarr;
+              <span className="en">Life is easy</span>
+              <span className="ch">愜意生活</span>
+              &rarr;
             </button>
           )}
           {loading && (

@@ -4,10 +4,10 @@ import { AiFillWechat } from 'react-icons/ai';
 import { HiLanguage } from 'react-icons/hi2';
 import $ from "jquery";
 
-export default function Header({ mylang, setMyLang }: { mylang?: string, setMyLang?: any }) {
+export default function Header({mylang, setMyLang} : {mylang?:string, setMyLang?:any}) {
   const switchMyLang = () => {
-    console.log(`lang changed from ${mylang}`);
-    if (mylang = 'en') {
+    console.log(`lang changed from "${mylang}" to another`);
+    if (mylang == 'en') {
       $('.en').hide();
       $('.ch').show();
       setMyLang('ch');
