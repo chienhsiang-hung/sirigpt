@@ -74,7 +74,7 @@ const Home: NextPage = () => {
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <p className="text-left font-medium">
-              Ask your question here
+              Ask your questions here
             </p>
           </div>
           <textarea
